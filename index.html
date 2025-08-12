@@ -151,6 +151,30 @@
             font-size: 14px;
             color: #ccc;
         }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem 5%;
+        }
+        .project-card {
+            background-color: #1e1e1e;
+            padding: 1rem;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 173, 181, 0.3);
+        }
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .project-card h3 {
+            margin-top: 1rem;
+            color: #00ADB5;
+        }
 
         .contact {
             padding: 3rem 5%;
@@ -306,6 +330,13 @@
                 </div>
             </div>
         </div>
+         <section class="projects" id="projects">
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x200" alt="Project 1">
+            <h3>Project One</h3>
+            <p>Modern and responsive Basic Calculator built using HTML, CSS, and JavaScript.</p>
+            <a href="https://shailaahmed16.github.io/calculator/" target="_blank">View Live</a>
+        </div>
     </section>
     <section class="contact" id="contact">
         <div class="contact-info">
@@ -344,4 +375,5 @@
 
 
 </html>
+
 
